@@ -43,13 +43,13 @@ Step 5. Select the git repository
 
 ***
 
-Step 6. Tick the Dockerfile option
+Step 6. Select the "Google Cloud's buildpacks" option. Leave all the parameters empty: Cloud Run will figure out on its own that you are using Python. 
 
 ![Step 6](README_images/img5.png)
 
 ***
 
-Step 7. Select the region, allow unauthenticated invocations, allow internet traffic, then press Create
+Step 7. Select the region (europe-west2 in this case), allow unauthenticated invocations, allow internet traffic, then press Create
 
 ![Step 7](README_images/img6.png)
 
@@ -59,5 +59,36 @@ Voilà! Access the URL.
 
 ![Voilà](README_images/img7.png)
 
+# Going further
+
+## Modifying the code
+
+You commit some changes to your repository and watch how the service is updated automatically. 
+
+## Cleaning up
+
+Don't forget to delete the service when you are done. 
+
+![Deleting a service](README_images/delete.png)
+
+## Adding an API endpoint
+
+Add the following code in app.py 
+
+```	
+@app.route("/hello_api")
+def hello_api():
+    return {
+		"name": "Wrinkle Five Star",
+		"species": "Duck",
+		"breed": "American Pekin",
+		"hatching_date": "2020-09-09",
+		"sex": "Male"
+    }
+```
+
+Then test your endpoint
+
+![API endpoint](README_images/hello_api.png)
 
 
