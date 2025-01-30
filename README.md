@@ -1,3 +1,5 @@
+© Chancellors, Masters and Scholars of The University of Oxford. All rights reserved.
+
 # Explore different providers
 
 This course is available for multiple cloud providers. Choose your preferred platform:
@@ -18,43 +20,48 @@ This course is available for multiple cloud providers. Choose your preferred pla
 Step 1. Fork (or make a copy of) this repository
 
 ***
-
-Step 2. Go to the Google Cloud Console and type "Cloud Run" in the search bar
+<details>
+<summary>Step 2. Go to the Google Cloud Console and type "Cloud Run" in the search bar</summary>
 
 ![Step 2](README_images/img1.png)
 
 ***
-
-Step 3. Go to Deploy Container -> Service
+</details>
+<details>
+<summary>Step 3. Go to Deploy Container -> Service</summary>
 
 ![Step 3](README_images/img2.png)
 
 ***
-
-Step 4. Select "Continuously deploy from a repository (source or function)" then "Set up with Cloud Build" 
+</details>
+<details>
+<summary>Step 4. Select "Continuously deploy from a repository (source or function)" then "Set up with Cloud Build"</summary>
 
 ![Step 4](README_images/img3.png)
 
 ***
-
-Step 5. Select the git repository 
+</details>
+<details>
+<summary>Step 5. Select the git repository</summary>
 
 ![Step 5](README_images/img4.png)
 
 ***
-
-Step 6. Select the "Google Cloud's buildpacks" option. Leave all the parameters empty: Cloud Run will figure out on its own that you are using Python. 
+</details>
+<details>
+<summary>Step 6. Select the "Google Cloud's buildpacks" option. Leave all the parameters empty: Cloud Run will figure out on its own that you are using Python.</summary>
 
 ![Step 6](README_images/img5.png)
 
 ***
-
-Step 7. Select the region (europe-west2 in this case), allow unauthenticated invocations, allow internet traffic, then press Create
+</details>
+<details>
+<summary>Step 7. Select the region (europe-west2 in this case), allow unauthenticated invocations, allow internet traffic, then press Create</summary>
 
 ![Step 7](README_images/img6.png)
 
 ***
-
+</details>
 Voilà! Access the URL.
 
 ![Voilà](README_images/img7.png)
@@ -63,17 +70,20 @@ Voilà! Access the URL.
 
 ## Modifying the code
 
-You commit some changes to your repository and watch how the service is updated automatically. 
+You can commit some changes to your repository and watch how the service is updated automatically. 
 
 ## Cleaning up
 
-Don't forget to delete the service when you are done. 
+<details>
+<summary>Don't forget to delete the service when you are done.</summary>
 
 ![Deleting a service](README_images/delete.png)
+</details>
 
 ## Adding an API endpoint
 
-Add the following code in app.py 
+<details>
+<summary>Add the following code in app.py</summary>
 
 ```	
 @app.route("/hello_api")
@@ -86,9 +96,29 @@ def hello_api():
 		"sex": "Male"
     }
 ```
-
+</details>
 Then test your endpoint
 
 ![API endpoint](README_images/hello_api.png)
 
+## User interface
+
+<details>
+<summary>...</summary>
+Missing content
+</details>
+
+## Database writing/reading
+
+<details>
+<summary>Go to the Google Cloud Console and type "SQL" in the search bar</summary>
+Missing content
+</details>
+
+## Storage bucket writing/reading
+
+<details>
+<summary>Go to the Google Cloud Console and type "buckets" in the search bar</summary>
+Missing content
+</details>
 
