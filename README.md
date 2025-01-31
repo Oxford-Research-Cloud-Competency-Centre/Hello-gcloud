@@ -8,10 +8,6 @@ This course is available for multiple cloud providers. Choose your preferred pla
 - [Hello Microsoft Azure](https://github.com/Oxford-Research-Cloud-Competency-Centre/Hello-mazure)
 - [Hello Amazon Web Services](https://github.com/Oxford-Research-Cloud-Competency-Centre/Hello-aws) (⭐ Most popular)
 - Hello Oracle Cloud *(Coming Soon)*
-- Hello IBM Cloud *(Coming Soon)*
-- Hello Tencent Cloud *(Coming Soon)*
-- Hello Alibaba Cloud *(Coming Soon)*
-- Hello Baidu AI Cloud *(Coming Soon)*
 
 *Note: Entries marked with "Coming Soon" are planned versions that are currently under development.*
 
